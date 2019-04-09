@@ -1,27 +1,14 @@
 def roll_call_dwarves(dwarfs)
   dwarfs.each_with_index do |dwarf, index|
-    puts "#{dwarf} "
+    puts "#{index}, #{dwarfs}"
   end
 end
 
-describe "Cartoon Collections" do
-  describe "#roll_call_dwarves" do
-    it "prints out the 7 dwarfs in a numbered list" do
-      dwarves = ["Dopey", "Grumpy", "Bashful"]
+def summon_captain_planet# code an argument here
+  
+end
 
-      output = capture_stdout do
-        roll_call_dwarves(dwarves)
-      end
-
-      # This regex allows for arbitrary characters between
-      # the numbering and the name
-      expect(output).to match(/1.*Dopey/)
-      expect(output).to match(/2.*Grumpy/)
-      expect(output).to match(/3.*Bashful/)
-    end
-  end
-
-  describe "#summon_captain_planet" do
+describe "#summon_captain_planet" do
     it "returns an array with the same number of elements that it was given" do
       veggies = ["carrot", "cucumber", "pepper"]
       result = summon_captain_planet(veggies)
@@ -42,7 +29,11 @@ describe "Cartoon Collections" do
     end
   end
 
-  describe "#long_planeteer_calls" do
+def long_planeteer_calls# code an argument here
+  # Your code here
+end
+
+describe "#long_planeteer_calls" do
     it "returns true if any calls are longer than 4 characters" do
       calls_long = ["axe", "earth", "wind", "fire", "water", "heart"]
       expect(long_planeteer_calls(calls_long)).to eq(true)
@@ -55,7 +46,12 @@ describe "Cartoon Collections" do
 
   end
 
-  describe "#find_the_cheese" do
+def find_the_cheese# code an argument here
+  # the array below is here to help
+  cheese_types = ["cheddar", "gouda", "camembert"]
+end
+
+describe "#find_the_cheese" do
     it "returns the first element of the array that is cheese" do
       cheddar_cheese = ["banana", "cheddar", "sock"]
       expect(find_the_cheese(cheddar_cheese)).to eq 'cheddar'
@@ -66,17 +62,3 @@ describe "Cartoon Collections" do
       expect(find_the_cheese(no_cheese)).to eq nil
     end
   end
-end
-
-def summon_captain_planet# code an argument here
-  # Your code here
-end
-
-def long_planeteer_calls# code an argument here
-  # Your code here
-end
-
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
-end
