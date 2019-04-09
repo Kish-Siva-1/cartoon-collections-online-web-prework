@@ -4,8 +4,10 @@ def roll_call_dwarves(dwarfs)
   end
 end
 
-def summon_captain_planet
-  
+def summon_captain_planet(input)
+  input.collect do |call|
+    call.up << "!"
+  end
 end
 
 describe "#summon_captain_planet" do
