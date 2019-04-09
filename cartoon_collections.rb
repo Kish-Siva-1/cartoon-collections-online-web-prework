@@ -10,8 +10,8 @@ def summon_captain_planet(input)
   end
 end
 
-def long_planeteer_calls
-  
+def long_planeteer_calls(input)
+  input.any? do ||
 end
 
 describe "#long_planeteer_calls" do
