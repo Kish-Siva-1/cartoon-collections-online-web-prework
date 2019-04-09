@@ -19,7 +19,7 @@ end
 def find_the_cheese(cheese)
 
   cheese.find do |food|
-    ["cheddar", "gouda", "camembert"].include? 
+    ["cheddar", "gouda", "camembert"].include? |food|
   end
   
 end
