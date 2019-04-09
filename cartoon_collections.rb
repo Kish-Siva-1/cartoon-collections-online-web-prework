@@ -16,19 +16,6 @@ def long_planeteer_calls(input)
   end
 end
 
-describe "#long_planeteer_calls" do
-    it "returns true if any calls are longer than 4 characters" do
-      calls_long = ["axe", "earth", "wind", "fire", "water", "heart"]
-      expect(long_planeteer_calls(calls_long)).to eq(true)
-    end
-
-    it "returns false if all calls are shorter than 4 characters" do
-    calls_short = ["wind", "fire"]
-    expect(long_planeteer_calls(calls_short)).to eq(false)
-    end
-
-  end
-
 def find_the_cheese# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
